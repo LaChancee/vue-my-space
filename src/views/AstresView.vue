@@ -94,7 +94,7 @@
         <div class="px-6">
 
           <ul class="">
-            <div class="grid grid-cols-3 gap-4" v-if="search.length < 1">
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4" v-if="search.length < 1">
               <li v-for="astre in $store.getters.astres" :key="astre.id" class="m-4">
 
                 <div
@@ -148,7 +148,7 @@
             </div>
 
 
-            <div class="grid grid-cols-3 gap-4" v-else>
+            <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4" v-else>
 
               <li v-for="astre in filteredItems" :key="astre.id" class="m-4">
                 <div
