@@ -17,6 +17,10 @@ export default createStore({
             state.astres = user.bodies;
           })
     },
+    addFavoris:(state, astre) =>{
+      state.favorites.push(astre);
+
+    },
 
 
 
